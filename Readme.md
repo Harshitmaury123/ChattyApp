@@ -21,18 +21,21 @@ CLOUDINARY_API_KEY=...
 CLOUDINARY_API_SECRET=...
 NODE_ENV=development
 
+By defautl frontend localhost url: http://localhost/5173
 
 Build the app
 two terminals
 
 1st terminal
-1. cd backend 
-2. npm start
+1. cd backend
+2. npm i
+3. npm start
 
 2nd terminal
 1. cd frontend
-2. npm run dev
+2. npm i
+3. npm run dev
 
 add the frontend url on origin in backend/src/lib/socket.js and backend/src/index.js in case if deployed
-
+add the backend_url/api in frontend/src/lib/axios
 add the backend url on frontend/src/stores/useAuthStore and set baseUrl=backendurl
